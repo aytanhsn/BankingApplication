@@ -50,8 +50,8 @@ public class SecurityConfig {
                         .requestMatchers("/customers/**").authenticated()
                         .anyRequest().permitAll()
                 )
-                .httpBasic(withDefaults())  // Basic Auth istifadə edilir
-                .formLogin(withDefaults()); // Form login deaktiv edilir
+                .httpBasic(withDefaults())  
+                .formLogin(withDefaults());
         return http.build();
     }
 }
